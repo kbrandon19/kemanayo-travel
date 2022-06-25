@@ -1,11 +1,19 @@
-
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Navigation.css'
 
 function Navigation() {
   return (
-    <div>
-    <h1>Navigation</h1>
-    </div>
+
+  //  MOBILE FIRST 
+
+  <>
+  <header>
+    <nav className="nav">
+      <div className="mobileNav"></div>
+    </nav>
+  </header>
+  </>
   )
 }
 

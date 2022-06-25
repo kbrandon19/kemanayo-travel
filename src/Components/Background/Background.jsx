@@ -3,7 +3,8 @@ import './Background.css'
 
 function Background() {
   return (
-    <div><h1>Background</h1></div>
+    
+    <div className="hero-bkg"></div>
   )
 }
 

@@ -1,3 +1,9 @@
 h1{
     font-size:3rem;
 }
+
+/* Mobile First */
+
+.mobileNav{
+    width:100%;
+}
