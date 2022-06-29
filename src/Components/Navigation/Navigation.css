@@ -1,9 +1,27 @@
-h1{
-    font-size:3rem;
-}
+:root{
+    --fs-sm:16px;
+  }
 
 /* Mobile First */
 
 .mobileNav{
     width:100%;
+    background:tomato;
+}
+
+
+
+#link-icon{
+    font-size: var(--fs-sm);
+}
+
+.mobile-links{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:blue;
+    height:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
