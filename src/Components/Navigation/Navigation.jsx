@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCompass,faSuitcase, faTicket, faCar, faCircleUser } from '@fortawesome/free-solid-svg-icons'
+import { faCompass,faSuitcase, faTicket, faCar, faCircleUser, faBell } from '@fortawesome/free-solid-svg-icons'
 
 import './Navigation.css'
 
@@ -13,28 +13,50 @@ function Navigation() {
   <header>
     <nav className="nav">
       <div className="mobileNav">
-        <div className="notification"></div>
+        <div className="notification">
+        <div className="logo">kemanayo</div>
+        <FontAwesomeIcon icon={faBell} />
+        </div>
         <div className="mobile-links">
          <div className="link-icon" id="explore">
-          <p>Explore</p>
-          <FontAwesomeIcon icon={faCompass} />
+         <FontAwesomeIcon icon={faCompass} />
+          <a href="https//kbrandon19.github.io">Explore</a>
+          
          </div>
          <div className="link-icon" id="trips">
-         <p>Trips</p>
-         <FontAwesomeIcon icon={faSuitcase} /></div>
+         <FontAwesomeIcon icon={faSuitcase} />
+          <a href="https//kbrandon19.github.io">Trips</a>
+          </div>
+{/* Button wrapped in anchor tag - test */}
+          {/* <a href="https//kbrandon19.github.io">
+          <button>
+          <FontAwesomeIcon icon={faSuitcase} />
+          Trips
+          </button>
+          </a>
+         */}
+
+         
+     
          <div className="link-icon" id="events">
-         <p>Events</p>
          <FontAwesomeIcon icon={faTicket} />
+         <a href="https//kbrandon19.github.io">Events</a>
+         
          </div>
          <div className="link-icon" id="rentals">
-         <p>Rentals</p>
-         <FontAwesomeIcon icon={faCar} />
+          <FontAwesomeIcon icon={faCar} />
+         <a href="https//kbrandon19.github.io">Rentals</a>
+        
          </div>
          <div className="link-icon" id="login">
-         <p>Login</p>
-         <FontAwesomeIcon icon={faCircleUser} /></div>
+         <FontAwesomeIcon icon={faCircleUser} />
+         <a href="https//kbrandon19.github.io">Login</a>
+         
+         </div>
         </div>
       </div>
+
+      <div className="desktopNav"></div>
     </nav>
   </header>
   </>

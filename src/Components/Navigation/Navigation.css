@@ -1,27 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
 :root{
     --fs-sm:16px;
   }
 
 /* Mobile First */
 
+.nav{
+    /* padding:1rem .5rem; */
+    background:#ffffff;
+}
 .mobileNav{
     width:100%;
-    background:tomato;
+    
 }
-
-
-
-#link-icon{
-    font-size: var(--fs-sm);
-}
-
-.mobile-links{
-    position:fixed;
-    bottom:0;
-    width:100%;
-    background:blue;
+.notification{
+    width:auto;
     height:auto;
     display:flex;
     justify-content: space-between;
     align-items: center;
+    padding:1rem;
+}
+.logo{
+    font-family:'Comfortaa', sans-serif;
+    font-weight:700;
+    font-size:1.3rem;
+    letter-spacing:-1px;
+    color:var(--primary-color);
+}
+
+
+
+
+
+.mobile-links{
+    position:fixed;
+    padding:1rem 0;
+    bottom:0;
+    width:100%;
+    background:#ffffff;
+    height:auto;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.link-icon{
+    width:auto;
+    height:auto;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.link-icon a{
+    color:var(--icon-color);
+    font-size:12px;
+    margin-top:5px;
+}
+
+button{
+    background: none;
+    border:none;
+    display:flex;
+    width:auto;
+    height:auto;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
 }
