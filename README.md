@@ -3,7 +3,10 @@
 
 # Kemanayo Travel Website
 
-This is a fictional website designed by UI Designer, [Nabhel](https://twitter.com/nabhel_). I decided to recreate this design and turn it into a functional website using React. While completing this project I am also live streaming my progress to help those learning how to code and also learn from others. 
+This is a fictional website designed by UI Designer, [Nabhel](https://twitter.com/nabhel_). I decided to recreate this design and turn it into a functional website using React. While completing this project I am also live streaming my progress to help those learning how to code and also learn from others.
+
+You can view the live project [here](https://kbrandon19.github.io/kemanayo-travel/).
+
 ![Kemanayo Design](https://cdn.dribbble.com/users/6285889/screenshots/17902914/media/3c02f6a6f3316d989881e82b6879f3db.jpg?compress=1&resize=1000x750&vertical=top)
 
 
