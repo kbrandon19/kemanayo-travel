@@ -30,6 +30,11 @@
     color:var(--primary-color);
 }
 
+.active{
+    color:var(--primary-color);
+}
+.inactive{color:var(--icon-color)}
+
 
 
 
@@ -46,20 +51,9 @@
     align-items: center;
    
 }
-.link-icon{
-    width:auto;
-    height:auto;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction:column;
-}
 
-.link-icon a{
-    color:var(--icon-color);
-    font-size:12px;
-    margin-top:5px;
-}
+
+
 
 button{
     background: none;
@@ -69,5 +63,7 @@ button{
     height:auto;
     justify-content: center;
     align-items:center;
-    flex-direction:column;
+    flex-direction:column;   
 }
+
+button > p{font-size:12px; letter-spacing:1px;}

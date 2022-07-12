@@ -18,41 +18,43 @@ function Navigation() {
         <FontAwesomeIcon icon={faBell} />
         </div>
         <div className="mobile-links">
-         <div className="link-icon" id="explore">
-         <FontAwesomeIcon icon={faCompass} />
-          <a href="https//kbrandon19.github.io">Explore</a>
-          
-         </div>
-         <div className="link-icon" id="trips">
-         <FontAwesomeIcon icon={faSuitcase} />
-          <a href="https//kbrandon19.github.io">Trips</a>
-          </div>
-{/* Button wrapped in anchor tag - test */}
-          {/* <a href="https//kbrandon19.github.io">
-          <button>
-          <FontAwesomeIcon icon={faSuitcase} />
-          Trips
-          </button>
-          </a>
-         */}
 
-         
-     
-         <div className="link-icon" id="events">
-         <FontAwesomeIcon icon={faTicket} />
-         <a href="https//kbrandon19.github.io">Events</a>
-         
-         </div>
-         <div className="link-icon" id="rentals">
-          <FontAwesomeIcon icon={faCar} />
-         <a href="https//kbrandon19.github.io">Rentals</a>
-        
-         </div>
-         <div className="link-icon" id="login">
-         <FontAwesomeIcon icon={faCircleUser} />
-         <a href="https//kbrandon19.github.io">Login</a>
-         
-         </div>
+        <a href="https://github.com/kbrandon19/kemanayo-travel">
+        <button className="inactive">
+        <FontAwesomeIcon icon={faCompass} className="inactive" size="lg"/>
+        <p>Explore</p>
+        </button>
+        </a>
+
+        <a href="https://github.com/kbrandon19/kemanayo-travel">
+        <button className="inactive"> 
+        <FontAwesomeIcon icon={faSuitcase} className="inactive" size="lg"/>
+        <p>Trips</p>
+        </button>
+        </a>
+
+        <a href="https://github.com/kbrandon19/kemanayo-travel">
+        <button>
+        <FontAwesomeIcon icon={faTicket} className="active" size="lg"/>
+        <p>Events</p>
+        </button>
+        </a>
+
+        <a href="https://github.com/kbrandon19/kemanayo-travel">
+        <button className="inactive">
+        <FontAwesomeIcon icon={faCar} className="inactive" size="lg"/>
+        <p>Rentals</p>
+        </button>
+        </a>
+
+        <a href="https://github.com/kbrandon19/kemanayo-travel">
+        <button className="inactive">
+        <FontAwesomeIcon icon={faCircleUser} className="inactive" size="lg"/>
+        <p>Login</p>
+        </button>
+        </a>
+
+
         </div>
       </div>
 
