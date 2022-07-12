@@ -1,3 +1,11 @@
-h1{
-    font-size:3rem;
+.hero{
+    width:100%;
+    height:auto;
+    position:relative;
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color:skyblue;
+    padding:0 2rem;
 }
