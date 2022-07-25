@@ -1,3 +1,5 @@
+
+
 .hero{
     width:100%;
     height:auto;
@@ -7,7 +9,7 @@
     justify-content: center;
     align-items: center;
     /* background-color:skyblue; */
-    padding:2rem 0rem;
+    padding:3rem 0rem;
     color:#ffffff;
 }
 
@@ -77,7 +79,7 @@ height:auto;}
 }
 
 .swiper-slide{
-    width: 300px !important;
+    width: 250px !important;
 }
 
 
@@ -88,3 +90,17 @@ height:auto;}
 .swiper-horizontal{
     bottom:5px;
 }
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 7px;
+    display: inline-block;
+    border-radius: 10px;
+    background: #000;
+    opacity: .3;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: .8;
+    background: var(--secondary-color);
+  }
