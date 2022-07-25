@@ -25,7 +25,6 @@ function Hero() {
             </div>
           </div>
           <div className="location-carousel">
-          <h1>Swiper JS</h1>
          <Carousel />
           </div>
         </div>

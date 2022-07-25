@@ -3,7 +3,7 @@
     height:calc(100vh - 125px);
     position:absolute;
     z-index:-10;
-    background-image: url('/public/assets/hero.jpg');
+    background-image: url('../../assets/hero.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
