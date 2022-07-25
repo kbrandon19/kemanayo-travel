@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap');
 
 :root{
     --fs-sm:16px;
@@ -30,10 +30,19 @@
     color:var(--primary-color);
 }
 
-.active{
+.fa.active{
     color:var(--primary-color);
 }
-.inactive{color:var(--icon-color)}
+
+button.active{
+    color:var(--black);
+    font-weight: bolder;
+}
+
+.fa.inactive,button.inactive{color:var(--icon-color)}
+
+
+
 
 
 
@@ -50,6 +59,7 @@
     justify-content: space-evenly;
     align-items: center;
     z-index: 100;
+    
    
 }
 
@@ -67,4 +77,5 @@ button{
     flex-direction:column;   
 }
 
-button > p{font-size:12px; letter-spacing:1px;}
+button > p{font-size:12px; letter-spacing:1px; font-family: 'Comfortaa', sans-serif;
+    font-weight: 600;}

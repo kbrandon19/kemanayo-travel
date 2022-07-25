@@ -4,7 +4,7 @@ import {Swiper,SwiperSlide} from 'swiper/react';
 import 'swiper/css/bundle';
 import './Hero.css';
 import Bali from '../../assets/bali.jpg';
-import Yogyakarta from '../../assets/yogyakarta.jpg';
+// import Yogyakarta from '../../assets/yogyakarta.jpg';
 import Phuket from '../../assets/phuket.jpg';
 import Jatiluwuh from '../../assets/jatiluwuh.jpg';
 import PhiPhi from '../../assets/phiphi.jpg';

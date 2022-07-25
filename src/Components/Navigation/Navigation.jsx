@@ -20,36 +20,36 @@ function Navigation() {
         <div className="mobile-links">
 
         <a href="https://github.com/kbrandon19/kemanayo-travel">
-        <button className="inactive">
-        <FontAwesomeIcon icon={faCompass} className="inactive" size="lg"/>
+        <button className="active">
+        <FontAwesomeIcon icon={faCompass} className="fa active" size="lg"/>
         <p>Explore</p>
         </button>
         </a>
 
         <a href="https://github.com/kbrandon19/kemanayo-travel">
         <button className="inactive"> 
-        <FontAwesomeIcon icon={faSuitcase} className="inactive" size="lg"/>
+        <FontAwesomeIcon icon={faSuitcase} className=" fa inactive" size="lg"/>
         <p>Trips</p>
         </button>
         </a>
 
         <a href="https://github.com/kbrandon19/kemanayo-travel">
-        <button>
-        <FontAwesomeIcon icon={faTicket} className="active" size="lg"/>
+        <button className="inactive">
+        <FontAwesomeIcon icon={faTicket} className="fa inactive" size="lg"/>
         <p>Events</p>
         </button>
         </a>
 
         <a href="https://github.com/kbrandon19/kemanayo-travel">
         <button className="inactive">
-        <FontAwesomeIcon icon={faCar} className="inactive" size="lg"/>
+        <FontAwesomeIcon icon={faCar} className="fa inactive" size="lg"/>
         <p>Rentals</p>
         </button>
         </a>
 
         <a href="https://github.com/kbrandon19/kemanayo-travel">
         <button className="inactive">
-        <FontAwesomeIcon icon={faCircleUser} className="inactive" size="lg"/>
+        <FontAwesomeIcon icon={faCircleUser} className="fa inactive" size="lg"/>
         <p>Login</p>
         </button>
         </a>
