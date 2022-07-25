@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import Carousel from './Carousel';
+import './Hero.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import './Hero.css'
 
 function Hero() {
   return (
@@ -15,7 +16,7 @@ function Hero() {
             </p>
             <div className="search-bar">
               <form action="#">
-                <input type="text" name="location" id="location-name" placeholder="Trips, places and activities"/>
+                <input type="text" name="location" id="location-name" placeholder="Trips, places and activities..."/>
                 <div className="search-icon">
 <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </div>
@@ -25,6 +26,7 @@ function Hero() {
           </div>
           <div className="location-carousel">
           <h1>Swiper JS</h1>
+         <Carousel />
           </div>
         </div>
       </main>
