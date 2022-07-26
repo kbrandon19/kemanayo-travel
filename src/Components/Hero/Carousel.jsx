@@ -1,6 +1,7 @@
 import React from 'react';
 import {Pagination, Keyboard} from 'swiper';
 import {Swiper,SwiperSlide} from 'swiper/react';
+import { IoLocationSharp } from "react-icons/io5";
 import 'swiper/css/bundle';
 import './Hero.css';
 import Bali from '../../assets/bali.jpg';
@@ -24,15 +25,31 @@ pagination={{clickable:true}}
  
     <SwiperSlide>
     <img class='destination-img' src={PhiPhi} alt="" />
+    <div className="local-display">
+        <IoLocationSharp id="pin" size={30}/>
+        <p id="name">Phi Phi Islands</p>
+    </div>
     </SwiperSlide>
     <SwiperSlide>
     <img class='destination-img' src={Jatiluwuh} alt="" />
+    <div className="local-display">
+        <IoLocationSharp id="pin" size={30}/>
+        <p id="name">Jatiluwuh</p>
+    </div>
     </SwiperSlide>
     <SwiperSlide>
     <img class='destination-img' src={Bali} alt="" />
+    <div className="local-display">
+        <IoLocationSharp id="pin" size={30}/>
+        <p id="name">Bali</p>
+    </div>
     </SwiperSlide>
     <SwiperSlide>
     <img class='destination-img' src={Phuket} alt="" />
+    <div className="local-display">
+        <IoLocationSharp id="pin" size={30}/>
+        <p id="name">Phuket</p>
+    </div>
     </SwiperSlide>
 </Swiper>
     </>
