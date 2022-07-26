@@ -1,3 +1,47 @@
-h1{
-    font-size:3rem;
+.container{
+    width:90%;
+    height:auto;
+    border-radius: 12px;
+    background-color: #fff;
+    margin:0 auto;
+    padding:1.25rem 1.5rem;
+    margin-bottom:5rem;
+}
+
+.amen-text{
+    margin:2rem 0;
+}
+
+.amen-text h2{
+    line-height: 1.2;
+    
+    font-size: 1.5rem;
+    text-align: center;
+}
+.amen-text h2 span{
+    color:var(--primary-color);
+}
+
+.amen-list{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.amen-list * p{
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+.amen-list div{
+    width:auto;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.amen-list div #icon{
+    margin-right:15px;
 }
