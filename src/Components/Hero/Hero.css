@@ -129,3 +129,19 @@ height:auto;}
     font-weight: 600;
     letter-spacing:1px;
 }
+
+/* Tablet */
+@media (max-width:768px){
+
+}
+
+/* Desktop */
+@media (max-width:1024px){
+
+}
+
+/* LG Desktop */
+
+@media (max-width:1440px){
+
+}

@@ -24,24 +24,43 @@
 
 .amen-list{
     width:100%;
+    height:auto;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin:4rem 0;
 }
 .amen-list * p{
     font-size: 1.1rem;
     line-height: 1.2;
+    width:200px;
 }
 
-.amen-list div{
-    width:auto;
+.amen-list__label{
     height:auto;
+    width:auto;
+    margin:1rem 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    text-align: center;
+    
 }
 
-.amen-list div #icon{
-    margin-right:15px;
+/* Tablet */
+@media (max-width:768px){
+
+}
+
+/* Desktop */
+@media (max-width:1024px){
+
+}
+
+/* LG Desktop */
+
+@media (max-width:1440px){
+
 }

@@ -12,24 +12,33 @@ function Amenities() {
         <h2><span>Kemanayo</span> is Your Personal Travel Assistant</h2>
       </div>
       <div className="amen-list">
-        <div>
-        <FaConciergeBell id="icon bell" size={30}/>
-          <p>Liburan gak hanya sekedar wacana</p>
+        <div className='amen-list__label'>
+        <div className="icon">
+          <FaConciergeBell color="#6BD0D6" id="icon bell" size={40}/>
         </div>
-        <div>
-        <FaSuitcase id="icon suitcase"size={30}/>
-          <p>Pelayanan terbaik untuk anda</p>
+        <p>Liburan gak hanya sekedar wacana</p>
+      </div>
+      <div className='amen-list__label'>
+        <div className="icon">
+          <FaSuitcase color="#6BD0D6" id="icon bell" size={40}/>
         </div>
-        <div>
-        <MdTravelExplore id="icon explore" size={30}/>
-          <p>Kemudahan akses website dan apps</p>
+        <p>Pelayanan terbaik untuk anda</p>
+      </div>
+      <div className='amen-list__label'>
+        <div className="icon">
+          <MdTravelExplore color="#6BD0D6" id="icon bell" size={40}/>
         </div>
-        <div>
-        <MdPayments id="icon payment" size={30}/>
-          <p>Pembayaran yang cepat dan aman</p>
+        <p>Kemudahan akses website dan apps</p>
+      </div>
+      <div className='amen-list__label'>
+        <div className="icon">
+          <MdPayments color="#6BD0D6" id="icon bell" size={40}/>
         </div>
+        <p>Pembayaran yang cepat dan aman</p>
       </div>
     </div>
+    </div>
+    
 
     </>
   )
@@ -37,3 +46,9 @@ function Amenities() {
 
 export default Amenities
 
+/*
+
+
+
+
+*/
