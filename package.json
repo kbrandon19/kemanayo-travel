@@ -16,9 +16,12 @@
     "swiper": "^8.3.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://kbrandon19.github.com/kemanayo-travel/",
   "scripts": {
 
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,6 +45,6 @@
     ]
   },
   "devDependencies": {
-   
+    "gh-pages": "^4.0.0"
   }
 }
