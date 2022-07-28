@@ -16,7 +16,7 @@
     "swiper": "^8.3.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://kbrandon19.github.com/kemanayo-travel/",
+  "homepage": "https://kbrandon19.github.io/kemanayo-travel/",
   "scripts": {
 
     "start": "react-scripts start",
