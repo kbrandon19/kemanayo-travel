@@ -1,7 +1,7 @@
 {
   "name": "kemanayo-travel",
   "version": "0.1.0",
-  "homepage": "http://kbrandon19.github.io/kemanayo-travel/",
+  "homepage": "https://kbrandon19.github.io/kemanayo-travel/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -18,9 +18,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
