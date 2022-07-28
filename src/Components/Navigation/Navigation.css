@@ -8,11 +8,18 @@
 
 .nav{
     /* padding:1rem .5rem; */
-    background:#ffffff;
+   
 }
 .mobileNav{
+    display:block;
+    background:#ffffff;
+}
+
+.desktopNav{display: none;}
+
+.mobileNav,.desktopNav{
     width:100%;
-    
+    height:auto;
 }
 .notification{
     width:auto;
@@ -70,17 +77,64 @@ button > p{font-size:12px; letter-spacing:1px; font-family: 'Comfortaa', sans-se
     font-weight: 600;}
 
     /* Tablet */
-@media (max-width:768px){
+@media (min-width:768px){
 
 }
 
 /* Desktop */
-@media (max-width:1024px){
+@media (min-width:1280px){
+.nav{
+    /* padding:1rem .5rem;
+    background-color: transparent;  */
+}
+    .mobileNav{
+        display:none;
+    }
+    .desktopNav{
+        width:85%;
+        padding:.5rem 0rem;
+        height:auto;
+        margin:0 auto;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        
+    }
 
+    .desktopNav .logo{
+        font-size: 1.75rem;
+    }
+
+    .desktop-links ul li,.user-access ul li{
+        display:inline;
+       
+    }
+    .desktop-links ul li{
+        margin:0 20px;
+        font-size: 13px;
+        font-family:'Comfortaa', sans-serif;
+        font-weight: 700;
+        color:#ffffff;
+    }
+
+    .user-access ul li a{
+        padding: 7px 15px;
+        border:1px solid #ffffff;
+        border-radius:50px;
+        margin:0 10px;
+        font-size: 12px;
+    }
+
+    .user-access ul li a#login{
+        color:#ffffff;
+    }
+    .user-access ul li a#sign-up{
+        background-color:#ffffff;
+    }
 }
 
-/* LG Desktop */
+/* Desktop */
 
-@media (max-width:1440px){
+@media (min-width:1920px){
 
 }

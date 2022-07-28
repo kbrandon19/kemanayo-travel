@@ -2,14 +2,14 @@
 
 .hero-bkg{
     width:100%;
-    height:calc(100vh - 125px);
+    height:100vh;
     position:absolute;
     z-index:-10;
     background-image: url('../../assets/hero.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    top:63.19px;
+    top:0;
 }
 
 .hero-bkg:before {

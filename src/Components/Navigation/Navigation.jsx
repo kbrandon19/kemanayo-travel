@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCompass,faSuitcase, faTicket, faCar, faCircleUser, faBell } from '@fortawesome/free-solid-svg-icons'
@@ -58,7 +60,29 @@ function Navigation() {
         </div>
       </div>
 
-      <div className="desktopNav"></div>
+      <div className="desktopNav">
+
+        <div className="logo">kemanayo</div>
+
+        <div className="desktop-links">
+      <ul>
+        <li><a href="">Trips</a></li>
+        <li><a href="">Rentals</a></li>
+        <li><a href="">Events</a></li>
+        <li><a href="">Blogs</a></li>
+      </ul>
+        </div>
+
+        <div className="user-access">
+
+          <ul>
+          <li><a href="" id="login">Login</a></li>
+          <li><a href="" id="sign-up">Sign Up</a></li>
+          </ul>
+
+        </div>
+
+      </div>
     </nav>
   </header>
   </>
