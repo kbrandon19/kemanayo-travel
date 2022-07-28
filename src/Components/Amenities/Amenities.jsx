@@ -38,8 +38,6 @@ function Amenities() {
       </div>
     </div>
     </div>
-    
-
     </>
   )
 }
