@@ -25,7 +25,7 @@ function Hero() {
             </div>
           </div>
           <div className="location-carousel">
-         <Carousel />
+            <Carousel />
           </div>
         </div>
       </main>
