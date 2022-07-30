@@ -18,9 +18,17 @@ function Carousel() {
 modules={[Pagination,Keyboard]}
 spaceBetween={40}
 slidesPerView={'auto'}
-centeredSlides={true}
+centeredSlides={'false'}
 draggable={true}
 pagination={{clickable:true}}
+
+breakpoints={{
+//when window width is  >= 1280px
+    1280:{  
+    spaceBetween:80,
+    slidesPerView:1,
+}
+}}
 >
  
     <SwiperSlide>

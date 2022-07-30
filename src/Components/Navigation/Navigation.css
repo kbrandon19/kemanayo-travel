@@ -91,7 +91,7 @@ button > p{font-size:12px; letter-spacing:1px; font-family: 'Comfortaa', sans-se
     }
     .desktopNav{
         width:85%;
-        padding:.5rem 0rem;
+        padding:1rem 0rem;
         height:auto;
         margin:0 auto;
         display:flex;

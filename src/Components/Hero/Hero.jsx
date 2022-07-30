@@ -16,9 +16,9 @@ function Hero() {
             </p>
             <div className="search-bar">
               <form action="#">
-                <input type="text" name="location" id="location-name" placeholder="Trips, places and activities..."/>
+                <input type="text" name="location" id="location-name" placeholder="Trips, places and activities"/>
                 <div className="search-icon">
-<FontAwesomeIcon icon={faMagnifyingGlass} />
+                  <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </div>
               </form>
             
