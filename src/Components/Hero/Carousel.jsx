@@ -18,15 +18,14 @@ function Carousel() {
 modules={[Pagination,Keyboard]}
 spaceBetween={40}
 slidesPerView={'auto'}
-centeredSlides={'false'}
+centeredSlides={'true'}
 draggable={true}
+grabCursor={true}
 pagination={{clickable:true}}
 
 breakpoints={{
 //when window width is  >= 1280px
     1280:{  
-    spaceBetween:80,
-    slidesPerView:1,
 }
 }}
 >

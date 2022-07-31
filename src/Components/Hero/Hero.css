@@ -76,7 +76,9 @@ height:auto;}
     background-size: contain;
     border-radius:25px;
 }
-
+.swiper-slide-active{
+ transform: scale(1.2);
+    }
 
 .swiper-slide{
     width: 250px !important;
@@ -149,14 +151,15 @@ height:auto;}
     .hero-content{
         text-align:left;
         padding-left:6rem;
+        flex-basis: 42%;
     }
     .hero-content h1{
-        font-size: 3.8rem;
-        line-height: 1.4;
+        font-size: 3.1rem;
+        line-height: 1.2;
         font-weight: 800;
     }
     .hero-content p{
-        font-size: 24px;
+        font-size: 18px;
         line-height: 1.4;
         font-weight:400;
     }
@@ -176,7 +179,7 @@ height:auto;}
     }
 
     .swiper-wrapper{
-        /* width:50%; */
+        width:50%;
     }
     
 }
