@@ -8,7 +8,6 @@
     background-image: url('../../assets/hero.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: -600px;
     background-size: cover;
     /* top:0; */
 }
@@ -20,3 +19,20 @@
     top: 0; bottom: 0;
     background: rgba(0,0,0,.45);
   }
+
+  /* Tablet */
+@media (min-width:768px){
+
+}
+
+/* Desktop */
+@media (min-width:1280px){
+
+
+}
+
+/* Desktop */
+
+@media (min-width:1920px){
+
+}

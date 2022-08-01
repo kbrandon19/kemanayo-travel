@@ -61,7 +61,7 @@ height:auto;}
 }
 .location-carousel{
     width:100%;
-    height:375px;
+    height: auto;
     
 }
 
@@ -70,24 +70,35 @@ height:auto;}
 
 .destination-img{
     width:100%;
-    height:350px;
+    height:275px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     border-radius:25px;
 }
-.swiper-slide-active{
+
+.swiper{
+    padding:2rem 0;
+}
+.swiper-slide.swiper-slide-active{
  transform: scale(1.2);
+ transition:.4s;
     }
 
 .swiper-slide{
-    width: 250px !important;
+    width: 260px !important;
 }
 
 
 .swiper-pagination{
     position: relative !important;
 } 
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+}
 
 .swiper-horizontal{
     bottom:5px;
@@ -121,7 +132,7 @@ height:auto;}
   .local-display #name{
     margin-left:2px;
     display: inline;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     letter-spacing:1px;
 }
@@ -170,6 +181,9 @@ height:auto;}
         width: 47px;
         height: 47px;}
 
+        .destination-img{
+           height:350px;
+        }
     .search-bar{
         margin-top:1.5rem;
     }
@@ -179,9 +193,12 @@ height:auto;}
     }
 
     .swiper-wrapper{
-        width:50%;
+        width:100%;
+        margin-left: -11rem;
     }
-    
+    .local-display #name{
+        font-size: 1.5rem;
+    }
 }
 
 /* LG Desktop */

@@ -51,12 +51,12 @@
 }
 
 /* Tablet */
-@media (max-width:768px){
+@media (min-width:768px){
 
 }
 
 /* Desktop */
-@media (max-width:1280px){
+@media (min-width:1280px){
     .container{
         width:85%;
     }
@@ -75,6 +75,6 @@
 
 /* Desktop */
 
-@media (max-width:1920px){
+@media (min-width:1920px){
 
 }
