@@ -1,5 +1,5 @@
 import React from 'react';
-import {Pagination, Keyboard} from 'swiper';
+import {Navigation,Pagination, Keyboard} from 'swiper';
 import {Swiper,SwiperSlide} from 'swiper/react';
 import { IoLocationSharp } from "react-icons/io5";
 import 'swiper/css/bundle';
@@ -15,10 +15,11 @@ function Carousel() {
   return (
     <>
 <Swiper 
-modules={[Pagination,Keyboard]}
+modules={[Navigation,Pagination,Keyboard]}
 spaceBetween={40}
 slidesPerView={'auto'}
 centeredSlides={'true'}
+navigation={{clickable:true}}
 draggable={true}
 grabCursor={true}
 pagination={{clickable:true}}
@@ -26,6 +27,11 @@ pagination={{clickable:true}}
 breakpoints={{
 //when window width is  >= 1280px
     1280:{  
+        pagination:false,
+        navigation:{
+            nextEl:'.swiper-button-next',
+            prevEl:'.swiper-button-prev'
+            },
 }
 }}
 >

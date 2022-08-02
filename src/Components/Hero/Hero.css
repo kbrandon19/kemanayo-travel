@@ -194,17 +194,38 @@
     height: 60px;
     border-radius: 50px;
   }
+  .swiper {
+    padding: 2.3rem 0;
+}
 .swiper-slide{
     width: 270px !important;
 }
   .swiper-wrapper {
     width: 100%;
-    margin-left: -10rem;
+    margin-left: -8rem;
     padding-left: 1rem;
   }
   .local-display #name {
     font-size: 1.5rem;
   }
+  .swiper-pagination-bullet{
+    display:none;
+  }
+  .swiper-button-next, .swiper-button-prev {
+ 
+    background-color: red;
+    position: relative;
+    bottom: 50%;
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+}
   
 }
 
