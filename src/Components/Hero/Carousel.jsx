@@ -25,6 +25,11 @@ grabCursor={true}
 pagination={{clickable:true}}
 
 breakpoints={{
+
+    375:{
+       
+        centeredSlides:true
+    },
 //when window width is  >= 1280px
     1280:{  
         pagination:false,

@@ -27,8 +27,10 @@
 
 /* Desktop */
 @media (min-width:1280px){
+.hero-bkg{
+  height:90vh;
 
-
+}
 }
 
 /* Desktop */

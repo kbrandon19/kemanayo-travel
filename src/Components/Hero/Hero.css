@@ -107,6 +107,14 @@
   bottom: 5px;
 }
 
+.swiper-wrapper{
+  margin-left:2.5rem;
+}
+
+.swiper-button-next,.swiper-button-prev{
+  display:none;
+}
+
 .swiper-pagination-bullet {
   width: 12px;
   height: 7px;
@@ -147,7 +155,7 @@
 /* Desktop */
 @media (min-width: 1280px) {
   .hero {
-    margin-top: 4rem;
+    margin-top: 2rem;
     width: 100%;
     height: auto;
     position: relative;
