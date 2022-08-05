@@ -241,6 +241,7 @@ button.search-btn{
     align-items: center;
     justify-content: center;
     color: var(--black);
+    transition:all 300ms ease-out;
 }
 
 .swiper-button-prev{
@@ -248,7 +249,7 @@ button.search-btn{
 }
 .swiper-button-prev:hover, .swiper-button-next:hover{
   transform:scale(1.1);
-  transition:250ms all ease-in-out;
+  transition:all 300ms ease-in;
 }
 .swiper-button-next{
   left: 74px;
@@ -273,10 +274,15 @@ button.search-btn{
     padding-left: 1rem;
   }
   .swiper-button-prev{
-    left:10rem;
+    left:2rem;
   }
+  
   .swiper-button-next{
-    left: 14rem;
+    left: 6rem;
     bottom: -37px;
+  } 
+
+  .slide1{
+    margin-right:43px
   }
 }

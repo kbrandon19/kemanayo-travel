@@ -40,28 +40,28 @@ breakpoints={{
 }}
 >
  
-    <SwiperSlide>
+    <SwiperSlide className='slide1'>
     <img class='destination-img' src={PhiPhi} alt="" />
     <div className="local-display">
         <IoLocationSharp id="pin" size={30}/>
         <p id="name">Phi Phi Islands</p>
     </div>
     </SwiperSlide>
-    <SwiperSlide>
+    <SwiperSlide className='slide3'>
     <img class='destination-img' src={Jatiluwuh} alt="" />
     <div className="local-display">
         <IoLocationSharp id="pin" size={30}/>
         <p id="name">Jatiluwuh</p>
     </div>
     </SwiperSlide>
-    <SwiperSlide>
+    <SwiperSlide className='slide3'>
     <img class='destination-img' src={Bali} alt="" />
     <div className="local-display">
         <IoLocationSharp id="pin" size={30}/>
         <p id="name">Bali</p>
     </div>
     </SwiperSlide>
-    <SwiperSlide>
+    <SwiperSlide className='slide4'>
     <img class='destination-img' src={Phuket} alt="" />
     <div className="local-display">
         <IoLocationSharp id="pin" size={30}/>
