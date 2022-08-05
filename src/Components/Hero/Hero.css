@@ -47,7 +47,8 @@
 .search-bar form {
   position: relative;
 }
-.search-icon {
+
+button.search-btn{
   display: flex;
   position: absolute;
   padding: 1rem;
@@ -107,9 +108,9 @@
   bottom: 5px;
 }
 
-/* .swiper-wrapper{
-  margin-left:2.5rem;
-} */
+.swiper-wrapper{
+  margin-left:.5rem;
+}
 
 .swiper-button-next,.swiper-button-prev{
   display:none;
@@ -251,7 +252,7 @@
 }
 .swiper-button-next{
   left: 74px;
-    bottom: -37px;
+  bottom: -37px;
 }
 
 .swiper-button-prev:after,.swiper-button-next:after{
@@ -264,4 +265,18 @@
 /* LG Desktop */
 
 @media (min-width: 1920px) {
+  .swiper-wrapper {
+    width: 100%;
+    /* margin-left: -8rem; */
+    /* margin-left:-7.8rem; */
+    margin-left:-18rem;
+    padding-left: 1rem;
+  }
+  .swiper-button-prev{
+    left:10rem;
+  }
+  .swiper-button-next{
+    left: 14rem;
+    bottom: -37px;
+  }
 }

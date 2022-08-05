@@ -17,9 +17,18 @@ function Hero() {
             <div className="search-bar">
               <form action="#">
                 <input type="text" name="location" id="location-name" placeholder="Trips, places and activities"/>
-                <div className="search-icon">
-                  <FontAwesomeIcon icon={faMagnifyingGlass} />
-                </div>
+                
+
+                <button className='search-btn'>
+                <FontAwesomeIcon 
+                style={{
+                  position:'absolute',
+                  color:'#ffffff',
+                  }}
+                icon={faMagnifyingGlass} />
+                </button>
+                  
+                
               </form>
             
             </div>
