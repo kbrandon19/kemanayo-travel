@@ -157,7 +157,7 @@ button.search-btn{
 /* Desktop */
 @media (min-width: 1280px) {
   .hero {
-    margin-top: 2rem;
+    margin-top: -1rem;
     width: 100%;
     height: auto;
     position: relative;
@@ -165,9 +165,22 @@ button.search-btn{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0rem 0rem;
     color: #ffffff;
   }
-
+  button.search-btn{
+    display: flex;
+    position: absolute;
+    padding: 1rem;
+    right: 8px;
+    top: 16%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
   .location-carousel {
     width: 50%;
   }
@@ -195,7 +208,7 @@ button.search-btn{
   }
 
   .destination-img {
-    height: 350px;
+    height: 290px;
   }
   .search-bar {
     margin-top: 1.5rem;
@@ -208,17 +221,26 @@ button.search-btn{
     padding: 4rem 0;
 }
 .swiper-slide{
-    width: 270px !important;
+    width: 200px !important;
 }
   .swiper-wrapper {
     width: 100%;
     /* margin-left: -8rem; */
     /* margin-left:-7.8rem; */
-    margin-left:-10.5rem;
+    margin-left:-10rem;
     padding-left: 1rem;
   }
+
+.local-display {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
   .local-display #name {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   .swiper-pagination-bullet{
     display:none;

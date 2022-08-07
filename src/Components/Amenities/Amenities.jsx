@@ -22,7 +22,7 @@ function Amenities() {
         <div className="icon">
           <FaSuitcase color="#6BD0D6" id="icon bell" size={40}/>
         </div>
-        <p>Pelayanan terbaik untuk anda</p>
+        <p>Pelayanan terbaik <br></br>untuk anda</p>
       </div>
       <div className='amen-list__label'>
         <div className="icon">
