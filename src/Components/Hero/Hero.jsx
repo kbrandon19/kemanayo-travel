@@ -20,7 +20,7 @@ function Hero() {
                 
 
                 <button className='search-btn'>
-                <FontAwesomeIcon 
+                <FontAwesomeIcon id='fa-icon'
                 style={{
                   position:'absolute',
                   color:'#ffffff',

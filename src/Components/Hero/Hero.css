@@ -31,9 +31,11 @@
 .search-bar {
   width: auto;
   height: auto;
+  max-width: 500px;
 }
 
 .search-bar input[type="text"] {
+  
   width: 100%;
   height: 45px;
   border-radius: 25px;
@@ -172,8 +174,9 @@ button.search-btn{
     width: 50%;
   }
   .hero-content {
+    max-width:600px;
     text-align: left;
-    padding-left: 6rem;
+    margin-left:6rem;
     flex-basis: 42%;
   }
   .hero-content h1 {
@@ -203,6 +206,24 @@ button.search-btn{
   .search-bar input[type="text"] {
     height: 60px;
     border-radius: 50px;
+  }
+
+  button.search-btn{
+    display: flex;
+    position: absolute;
+    padding: 1rem;
+    right: 8px;
+    top: 13%;
+    width: 45px;
+    height: 45px;
+    background-color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  button.search-btn #fa-icon{
+    font-size:1.2rem
   }
   .swiper {
     padding: 4rem 0;
@@ -266,6 +287,19 @@ button.search-btn{
 /* LG Desktop */
 
 @media (min-width: 1920px) {
+
+  .hero-content{
+    width:auto;
+    margin-left: 8rem;  }
+
+  .hero-content h1{
+    font-size: 3.5rem;
+  }
+
+  .hero-content p{
+    font-size:21px;
+  }
+
   .swiper-wrapper {
     width: 100%;
     /* margin-left: -8rem; */
