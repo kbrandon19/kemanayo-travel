@@ -159,7 +159,7 @@ button.search-btn{
 /* Desktop */
 @media (min-width: 1280px) {
   .hero {
-    margin-top: -1rem;
+    margin: 3rem 0;
     width: 100%;
     height: auto;
     position: relative;
@@ -211,7 +211,7 @@ button.search-btn{
   }
 
   .destination-img {
-    height: 290px;
+    height: 350px;
   }
   .search-bar {
     margin-top: 1.5rem;
@@ -242,13 +242,13 @@ button.search-btn{
     padding: 4rem 0;
 }
 .swiper-slide{
-    width: 200px !important;
+    width: 270px !important;
 }
   .swiper-wrapper {
     width: 100%;
     /* margin-left: -8rem; */
     /* margin-left:-7.8rem; */
-    margin-left:-10rem;
+    margin-left:-10.5rem;
     padding-left: 1rem;
   }
 
@@ -261,7 +261,7 @@ button.search-btn{
   justify-content: center;
 }
   .local-display #name {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   .swiper-pagination-bullet{
     display:none;
@@ -322,11 +322,15 @@ button.search-btn{
     font-size:21px;
   }
 
+  .destination-img{
+    height:350px;
+  }
+
   .swiper-wrapper {
     width: 100%;
     /* margin-left: -8rem; */
     /* margin-left:-7.8rem; */
-    margin-left:-18rem;
+    margin-left:-22rem;
     padding-left: 1rem;
   }
   .swiper-button-prev{
@@ -337,6 +341,9 @@ button.search-btn{
     left: 6rem;
     bottom: -37px;
   } 
+  .swiper-slide{
+    width:275px !important;
+  }
 
   .slide1{
     margin-right:43px
