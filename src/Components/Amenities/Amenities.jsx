@@ -7,7 +7,7 @@ import {MdTravelExplore, MdPayments} from 'react-icons/md';
 function Amenities() {
   return (
     <>
-    <div className="container">
+    <div className="amenities">
       <div className="amen-text">
         <h2><span>Kemanayo</span> is Your Personal Travel Assistant</h2>
       </div>
