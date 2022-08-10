@@ -3,7 +3,7 @@
 
 <p>This is a fictional website designed by UI Designer, <a href="https://twitter.com/nabhel_">Nabhel</a>. I decided to recreate this design and turn it into a functional website using React. While completing this project I am also live streaming my progress to help those learning how to code and also learn from others.</p>
 
-<p>You can view the live project <a href="https://kbrandon19.github.io/kemanayo-travel/">here</a>.</p>
+<p>You can view the live project <a href="https://kemanayo-travel.netlify.app/">here</a>.</p>
 
 <p><img src="https://cdn.dribbble.com/users/6285889/screenshots/17902914/media/3c02f6a6f3316d989881e82b6879f3db.jpg?compress=1&amp;resize=1000x750&amp;vertical=top" alt="Kemanayo Design" /></p>
 
