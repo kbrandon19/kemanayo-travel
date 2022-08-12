@@ -76,11 +76,6 @@ button.search-btn:hover{
   height: auto;
 }
 
-button.search-btn #fa-icon:hover{
-  transform: rotate(360deg);
-  transition:all 300ms ease-in;
-}
-
 /* Styling for Carousel */
 
 .destination-img {
@@ -172,7 +167,7 @@ button.search-btn #fa-icon:hover{
 /* Desktop */
 @media (min-width: 1280px) {
   .hero {
-    margin: 3rem 0 0 0;
+    margin: 0rem 0 0 0;
     width: 100%;
     height: auto;
     position: relative;
@@ -224,7 +219,7 @@ button.search-btn #fa-icon:hover{
   }
 
   .destination-img {
-    height: 350px;
+    height: 300px;
   }
   .search-bar {
     margin-top: 1.5rem;
@@ -252,16 +247,14 @@ button.search-btn #fa-icon:hover{
     font-size:1.2rem
   }
   .swiper {
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 .swiper-slide{
-    width: 270px !important;
+    width: 250px !important;
 }
   .swiper-wrapper {
     width: 100%;
-    /* margin-left: -8rem; */
-    /* margin-left:-7.8rem; */
-    margin-left:-10.5rem;
+    margin-left: -10.8rem;
     padding-left: 1rem;
   }
 
@@ -360,8 +353,8 @@ button.search-btn #fa-icon:hover{
     width:275px !important;
   }
 
-  .slide1{
+  /* .slide1{
     margin-right:30px;
-  }
+  } */
 
 }
