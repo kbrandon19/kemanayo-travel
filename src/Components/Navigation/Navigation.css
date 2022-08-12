@@ -80,6 +80,11 @@ button > p{font-size:12px; letter-spacing:1px; font-family: 'Comfortaa', sans-se
 
 }
 
+/* iphone 8 height 667 */
+@media (height:667px){
+
+}
+
 /* Desktop */
 @media (min-width:1280px){
 .nav{
