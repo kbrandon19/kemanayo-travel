@@ -1,16 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {BrowserRouter,Routes,Route,} from "react-router-dom";
 import './index.css';
 import App from './App';
 
+import Trips from "./Routes/trips";
+import Events from "./Routes/events";
+import Rentals from "./Routes/rentals";
+import Blog from "./Routes/blog";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-    
-  </React.StrictMode>
+
+
+
+<BrowserRouter>
+  <Routes>
+    <Route path="/" element={<App/>}/>
+    <Route path="/trips" element={<Trips/>}/>
+    <Route path="/events" element={<Events/>}/>
+    <Route path="/rentals" element={<Rentals/>}/>
+    <Route path="/blog" element={<Blog/>}/>
+    <Route path="*" element={
+        <main style={{ padding: "1rem" }}>
+          <p>There's nothing here!</p>
+        </main>
+      }
+    />
+  </Routes>
+</BrowserRouter>
 );
 
 

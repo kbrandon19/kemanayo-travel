@@ -6,6 +6,8 @@ import { faCompass,faSuitcase, faTicket, faCar, faCircleUser, faBell } from '@fo
 
 import './Navigation.css'
 
+import { Outlet, Link } from 'react-router-dom'
+
 function Navigation() {
   return (
 
@@ -21,40 +23,50 @@ function Navigation() {
         </div>
         <div className="mobile-links">
 
-        <a href="https://github.com/kbrandon19/kemanayo-travel">
-        <button className="active">
-        <FontAwesomeIcon icon={faCompass} className="fa active" size="lg"/>
-        <p>Explore</p>
-        </button>
-        </a>
+        
+        <Link to="/">
+          <button className="active">
+          <FontAwesomeIcon icon={faCompass} className="fa active" size="lg"/>
+          <p>Explore</p>
+          </button>
+        </Link>
+        
 
-        <a href="https://github.com/kbrandon19/kemanayo-travel">
-        <button className="inactive"> 
-        <FontAwesomeIcon icon={faSuitcase} className=" fa inactive" size="lg"/>
-        <p>Trips</p>
-        </button>
-        </a>
+       
+        <Link to="/trips">
+          <button className="inactive">
+          <FontAwesomeIcon icon={faSuitcase} className=" fa inactive" size="lg"/>
+          <p>Trips</p>
+          </button>
+        </Link>
+        
 
-        <a href="https://github.com/kbrandon19/kemanayo-travel">
-        <button className="inactive">
-        <FontAwesomeIcon icon={faTicket} className="fa inactive" size="lg"/>
-        <p>Events</p>
-        </button>
-        </a>
+        <Link to="/events">
+        
+          <button className="inactive">
+          <FontAwesomeIcon icon={faTicket} className="fa inactive" size="lg"/>
+          <p>Events</p>
+          </button>
+          
+        </Link>
 
-        <a href="https://github.com/kbrandon19/kemanayo-travel">
-        <button className="inactive">
-        <FontAwesomeIcon icon={faCar} className="fa inactive" size="lg"/>
-        <p>Rentals</p>
-        </button>
-        </a>
+        
+        <Link to="/rentals">
+          <button className="inactive">
+          <FontAwesomeIcon icon={faCar} className="fa inactive" size="lg"/>
+          <p>Rentals</p>
+          </button>
+        </Link>
+        
 
-        <a href="https://github.com/kbrandon19/kemanayo-travel">
-        <button className="inactive">
-        <FontAwesomeIcon icon={faCircleUser} className="fa inactive" size="lg"/>
-        <p>Login</p>
-        </button>
-        </a>
+        
+        <Link to="/login">
+          <button className="inactive">
+          <FontAwesomeIcon icon={faCircleUser} className="fa inactive" size="lg"/>
+          <p>Login</p>
+          </button>
+        </Link>
+        
 
 
         </div>
@@ -62,14 +74,15 @@ function Navigation() {
 
       <div className="desktopNav">
 
-        <div className="logo">kemanayo</div>
+        <div className="logo"><Link to="/">kemanayo</Link></div>
 
         <div className="desktop-links">
       <ul>
-        <li><a href="">Trips</a></li>
-        <li><a href="">Rentals</a></li>
-        <li><a href="">Events</a></li>
-        <li><a href="">Blogs</a></li>
+        <li><Link to="/trips">trips</Link></li>
+        <li><Link to="/rentals">rentals</Link></li>
+        <li><Link to="/events">events</Link></li>
+        <li><Link to="/blog">blog</Link></li>
+   
       </ul>
         </div>
 
@@ -84,7 +97,9 @@ function Navigation() {
 
       </div>
     </nav>
+    <Outlet/>
   </header>
+
   </>
   )
 }
