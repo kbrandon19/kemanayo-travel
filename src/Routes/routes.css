@@ -13,3 +13,21 @@
     
     }
 }
+
+/*  BLOG   */
+
+.blog-wrap{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blog-thumb{
+    padding:2rem;
+    background-color: aqua;
+}
+
+.blog-thumb-img{
+    width:200px;
+}
