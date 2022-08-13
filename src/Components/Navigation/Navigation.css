@@ -50,9 +50,9 @@ button.active{
 
 .mobile-links{
     position:fixed;
-    padding:8px 0;
+    padding: 10px 1rem;
     bottom:0;
-    width:100%;
+    width:100vw;
     background:#ffffff;
     height:auto;
     display:flex;
@@ -72,16 +72,22 @@ button{
     flex-direction:column;   
 }
 
-button > p{font-size:12px; letter-spacing:1px; font-family: 'Comfortaa', sans-serif;
-    font-weight: 600;}
+button > p{
+    font-size:12px;
+    letter-spacing:1px; 
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 600;
+}
+/* iphone 8 height 667 */
+@media screen and (height:667px){
+.mobile-links{
+    padding:14px;
+}
+}
+
 
     /* Tablet */
 @media (min-width:768px){
-
-}
-
-/* iphone 8 height 667 */
-@media (height:667px){
 
 }
 
