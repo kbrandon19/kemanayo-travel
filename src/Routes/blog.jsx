@@ -24,6 +24,8 @@ function blog() {
        </div>
         <div className="post-info">
         <h1>Places Less Traveled Are The Most Memorable</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem debitis eveniet fugit? Tenetur, quaerat doloremque. Lorem ipsum dolor sit amet. <a href="#" id="blog-link">Read More</a></p>
+  
         <div className="post-author">
           <div className="post-name">
             <div className="profile-avi"></div>
@@ -34,10 +36,12 @@ function blog() {
         </div>
         </div>
        </div>
-        <div className="blog-posts"></div>
+
+       <div className="blog-post">
+        <div className="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veritatis dolorum repudiandae! Et distinctio doloribus aut quaerat eum nobis consequatur, ex itaque sit obcaecati assumenda placeat culpa earum omnis natus?</div>
+        <div className="post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veritatis dolorum repudiandae! Et distinctio doloribus aut quaerat eum nobis consequatur, ex itaque sit obcaecati assumenda placeat culpa earum omnis natus?</div>
+       </div>
      </div>
-
-
      </div>
     </>
    
