@@ -18,6 +18,14 @@
     height:auto;
 }
 
+.section-title{
+    width:auto;
+    height:auto;
+    padding:1rem;
+    text-align: left;
+   
+    
+}
 
 .post-highlight{
     position:relative;

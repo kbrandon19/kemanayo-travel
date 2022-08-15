@@ -18,7 +18,7 @@ function blog() {
     <Navigation />
      <div className="main-container">
      <div className="blog-container">
-   
+   <div className="section-title"><h4>Featured Post</h4><hr /></div>
        <div className="post-highlight">
        <div className="post-image">
        
