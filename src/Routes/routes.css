@@ -3,7 +3,6 @@
     height:50vh;
     max-width:1280px;
     margin:4rem auto 2rem auto;
-    background-color: rgb(65, 131, 189);
     text-align: center;
     
 }
@@ -17,15 +16,15 @@
 .blog-container{
     width:100%;
     height:auto;
-    
 }
+
 
 .post-highlight{
     position:relative;
     width:auto;
     height:400px;
     display:grid;
-    margin-bottom:3rem;
+    margin-bottom:15rem;
 }
 .post-image{
     background-image:url('../assets/blog.jpg');
@@ -35,22 +34,27 @@
 }
 
 .post-info{
-    width:80%;
+    width:90%;
     padding:1.5rem 2rem;
     height:auto;
-    max-height:250px;
     background-color: #ffffff;
     box-shadow: 0px 15px 30px 5px rgba(0,0,0,0.1);
     position:absolute;
     z-index:2;
     margin:0 auto;
-    bottom:-2rem;
+    bottom:-15rem;
     place-self: center;
     text-align:left;
     border-radius:12px;
 }
 
+.post-info h1{
+    line-height: 1.1;
+    margin-bottom:1rem;
+}
+
 .post-info a#blog-link{
+    font-size: 14px;
     font-style: italic;
     color:#000000;
 
@@ -61,13 +65,14 @@
 }
 
 .post-info > p{
-    margin:.25rem 0 1rem 0;
+    margin:.25rem  0;
     max-width: 750px;
     color:#787575;
 }
 
 .post-author{
     width:350px;
+    margin-top:1rem;
     height:auto;
     display:flex;
     justify-content: flex-start;
@@ -105,20 +110,18 @@
     background-size: cover;
 }
 
-.blog-post{
-    width:100%;
-    height:300px;
-    background-color: rebeccapurple;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
 
+@media (min-width:1280px){
+    .post-highlight{
+        margin-bottom:0;
+    }
+.post-info{
+    width:80%;
+    bottom:-2rem;
 }
 
-.post{
-    flex-basis: 45%;
-    padding:1rem;
-    width:auto;
-    height:auto;
-    background-color: tomato;
+
+}
+@media (min-width:1920px){
+ 
 }
