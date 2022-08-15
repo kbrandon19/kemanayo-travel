@@ -51,7 +51,7 @@ function Navigation() {
         </Link>
 
         
-        <Link to="/rentals">
+        <Link to="/blog">
           <button className="inactive">
           <FontAwesomeIcon icon={faCar} className="fa inactive" size="lg"/>
           <p>Rentals</p>
