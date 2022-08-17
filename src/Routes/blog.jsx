@@ -2,29 +2,36 @@
 /* eslint-disable jsx-a11y/heading-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-// import Background from '../Components/Background/Background'
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+
+import Background from '../Components/Background/Background'
 import Navigation from '../Components/Navigation/Navigation';
 
 import "../Routes/routes.css"
 
-// this will be the object data for the blog posts
-const data = [
-  {
-    id:1,
-    image:"",
-    title:"",
-    excerpt:"",
-  }
-]
+//Sanity posts
+import AllPosts from '../Components/Sanity/AllPosts';
+import DefaultPost from '../Components/Sanity/DefaultPost';
+
 
 
 
 function blog() {
   return (
     <>
-      {/* <Background/> */}
+      <Background/>
     <Navigation />
-     <div className="main-container">
+    <h1>Does this work?</h1>
+    {/* <BrowserRouter>
+      <Routes>
+        <Route component={AllPosts} path="/allpost" exact />
+        <Route component={DefaultPost} path="/defaultpost" exact />
+      </Routes>
+
+    </BrowserRouter> */}
+
+
+     {/* <div className="main-container">
      <div className="blog-container">
    <div className="section-title"><h4>Featured Post</h4><hr /></div>
        <div className="blog-feat">
@@ -47,7 +54,7 @@ function blog() {
         </div>
        </div>
      </div>
-     </div>
+     </div> */}
     </>
    
   )
