@@ -10,6 +10,7 @@
     "@frontegg/react": "^4.0.29",
     "@radix-ui/colors": "^0.1.8",
     "@radix-ui/react-tabs": "^1.0.0",
+    "@sanity/client": "^3.3.3",
     "@stitches/react": "^1.2.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
