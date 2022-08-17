@@ -2,6 +2,7 @@ import React,{useEffect,useState } from 'react';
 import { useParams } from 'react-router-dom';
 import sanityClient from '../.././client.js'
 import imageUrlBuilder from '@sanity/image-url'
+import {PortableText} from '@portabletext/react'
 import Navigation from '../Navigation/Navigation'
 
 import "../../Routes/routes.css"
@@ -51,12 +52,18 @@ export default function DefaultPost() {
         </div>
          </div>
          <img src={urlFor(postData.mainImage).width(200).url()} alt="post graphic" />
+            <PortableText 
+            
+            blocks={postData.body} 
+            projectId={sanityClient.clientConfig.projectId}
+            dataset={sanityClient.clientConfig.dataset}
 
+            />
 
         <div>
-            {postData.body}
+  
         </div>
-    </div>
+    </div>  
     </>
   )
 }
