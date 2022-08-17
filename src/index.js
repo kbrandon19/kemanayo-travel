@@ -7,7 +7,7 @@ import App from './App';
 import Trips from "./Routes/trips";
 import Events from "./Routes/events";
 import Rentals from "./Routes/rentals";
-import Blog from "./Routes/blog";
+// import Blog from "./Routes/blog";
 import DefaultPost from './Components/Sanity/DefaultPost';
 import AllPosts from './Components/Sanity/AllPosts';
 
