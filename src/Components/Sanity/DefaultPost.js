@@ -52,13 +52,13 @@ export default function DefaultPost() {
         </div>
          </div>
          <img src={urlFor(postData.mainImage).width(200).url()} alt="post graphic" />
-            <PortableText 
+          {  <PortableText 
             
             blocks={postData.body} 
-            projectId={sanityClient.clientConfig.projectId}
-            dataset={sanityClient.clientConfig.dataset}
+            projectId="f30bvj7t"
+            dataset="production"
 
-            />
+            />}
 
         <div>
   

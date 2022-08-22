@@ -28,6 +28,7 @@ export default function AllPosts() {
     
   return (
     <>
+    <Navigation/> 
     <div>
       <h2>Blog Posts</h2>
       <h3>Welcome to my blog posts page!</h3>
@@ -45,7 +46,7 @@ export default function AllPosts() {
           ))}
       </div>
     </div>
-        <Navigation/> 
+        
 
     </>
     
