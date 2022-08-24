@@ -1,7 +1,7 @@
 
 import React,{useEffect,useState } from 'react';
 import { Link } from 'react-router-dom';
-import sanityClient from '../.././client'
+import sanityClient from '@sanity/client'
 import Navigation from '../Navigation/Navigation'
 
 import "../../Routes/routes.css"

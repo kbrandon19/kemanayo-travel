@@ -1,6 +1,6 @@
 import React,{useEffect,useState } from 'react';
-import { useParams } from 'react-router-dom';
-import sanityClient from '../.././client.js'
+import { Link, useParams } from 'react-router-dom';
+import sanityClient from '@sanity/client'
 import imageUrlBuilder from '@sanity/image-url'
 import {PortableText} from '@portabletext/react'
 import Navigation from '../Navigation/Navigation'
@@ -19,7 +19,7 @@ export default function DefaultPost() {
 
     useEffect(() => {
       sanityClient.fetch(
-          `*[slug.current == $slug]{
+          `*[slug.current == "${slug}"]{
           title,
           slug,
           mainImage{
@@ -47,21 +47,23 @@ export default function DefaultPost() {
     <div>
         <h2>{postData.title}</h2>
         <div>
-            <img src={urlFor(postData.authorImage).width(100).url()} alt="blog post author" />
+            <img src={urlFor(postData.authorImage).width(200).url()} alt="blog post author" />
             <h4>{postData.name}</h4>
         </div>
          </div>
          <img src={urlFor(postData.mainImage).width(200).url()} alt="post graphic" />
-          {  <PortableText 
-            
-            blocks={postData.body} 
-            projectId="f30bvj7t"
-            dataset="production"
-
-            />}
+     
 
         <div>
+        {  
+
   
+            <PortableText 
+            value={postData.body} 
+            projectId="f30bvj7t"
+            dataset="production" 
+            />
+        }
         </div>
     </div>  
     </>
