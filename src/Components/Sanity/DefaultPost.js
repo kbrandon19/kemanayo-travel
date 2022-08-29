@@ -1,5 +1,5 @@
 import React,{useEffect,useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import sanityClient from '@sanity/client'
 import imageUrlBuilder from '@sanity/image-url'
 import {PortableText} from '@portabletext/react'

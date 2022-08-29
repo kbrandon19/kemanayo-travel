@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import sanityClient from '@sanity/client'
 import Navigation from '../Navigation/Navigation'
 
-import "../../Routes/routes.css"
+import "./AllPosts.css"
 
 export default function AllPosts() {
     const [allPostsData, setAllPosts] = useState(null);
@@ -29,7 +29,8 @@ export default function AllPosts() {
   return (
     <>
     <Navigation/> 
-    <div>
+    <div className='main-container'>
+      <div className='blog-container'>
       <h2>Blog Posts</h2>
       <h3>Welcome to my blog posts page!</h3>
       <div>
@@ -44,6 +45,7 @@ export default function AllPosts() {
               </span>
             </Link>
           ))}
+      </div>
       </div>
     </div>
         
