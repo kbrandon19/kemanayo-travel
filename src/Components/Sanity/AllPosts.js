@@ -3,6 +3,7 @@ import React,{useEffect,useState } from 'react';
 import { Link } from 'react-router-dom';
 import sanityClient from '../../client'
 import Navigation from '../Navigation/Navigation'
+import FeaturedBlog from './FeaturedBlog';
 
 import "./AllPosts.css"
 
@@ -14,6 +15,7 @@ export default function AllPosts() {
           `*[_type == "post"]{
           title,
           slug,
+          tags,
           mainImage{
             asset -> {
             _id,
@@ -30,23 +32,25 @@ export default function AllPosts() {
     <>
     <Navigation/> 
     <div className='main-container'>
-      <div className='blog-container'>
-      <h2>Blog Posts</h2>
-      <h3>Welcome to my blog posts page!</h3>
-      <div>
-        {allPostsData &&
-          allPostsData.map((post, index) => (
-            <Link to={"/" + post.slug.current} key={post.slug.current}>
-              <span key={index}>
-                <img src={post.mainImage.asset.url} alt="" />
-                <span>
-                  <h2>{post.title}</h2>
+     <FeaturedBlog />
+      <div className="blog-lib">
+        <h2>Blog Posts</h2>
+        <h3>Welcome to my blog posts page!</h3>
+        {/* <div>
+          {allPostsData &&
+            allPostsData.map((post, index) => (
+              <Link to={"/" + post.slug.current} key={post.slug.current}>
+                <span key={index}>
+                  <img src={post.mainImage.asset.url} alt="" />
+                  <span>
+                    <h2>{post.title}</h2>
+                  </span>
                 </span>
-              </span>
-            </Link>
-          ))}
+              </Link>
+            ))}
+        </div> */}
       </div>
-      </div>
+   
     </div>
         
 
