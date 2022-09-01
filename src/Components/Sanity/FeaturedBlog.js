@@ -13,7 +13,6 @@ export default function FeaturedBlog() {
               Voluptatem debitis eveniet fugit? Tenetur, quaerat doloremque.
               Lorem ipsum dolor sit amet.
             </p>
-        
             <a href=" " id="blog-link">
               Read More
             </a>
