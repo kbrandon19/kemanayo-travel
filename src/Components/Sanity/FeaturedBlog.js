@@ -13,13 +13,14 @@ export default function FeaturedBlog() {
               Voluptatem debitis eveniet fugit? Tenetur, quaerat doloremque.
               Lorem ipsum dolor sit amet.
             </p>
-            <a href="#" id="blog-link">
+        
+            <a href=" " id="blog-link">
               Read More
             </a>
 
             <div className="post-author">
               <div className="post-name">
-                <div className="profile-avi"></div>
+                {/* <div className="profile-avi"></div> */}
                 <p>Jason Fletcher</p>
               </div>
               <span id="auth-date">29, April 2014</span>

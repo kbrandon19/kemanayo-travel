@@ -1,5 +1,5 @@
 .blog-container{
-    width:100%;
+    width:auto;
     height:auto;
 }
 
@@ -8,7 +8,7 @@
     width:auto;
     height:400px;
     display:grid;
-    margin-bottom:25rem;
+    margin-bottom:15rem;
 }
 .blog-feat-image{
     background-image:url('../../assets/blog.jpg');
@@ -26,7 +26,7 @@
     position:absolute;
     z-index:2;
     margin:0 auto;
-    bottom:-9rem;
+    bottom:-13rem;
     place-self: center;
     text-align:left;
     border-radius:12px;
@@ -95,7 +95,8 @@
 
 @media (min-width:1280px){
     .blog-feat{
-        margin-bottom:0;
+        
+        margin-bottom:25rem;
     }
 .post-info{
     width:80%;

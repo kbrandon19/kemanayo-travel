@@ -5,9 +5,11 @@ import sanityClient from '../../client'
 import Navigation from '../Navigation/Navigation'
 import FeaturedBlog from './FeaturedBlog';
 
+
 import "./AllPosts.css"
 
 export default function AllPosts() {
+    // eslint-disable-next-line no-unused-vars
     const [allPostsData, setAllPosts] = useState(null);
 
     useEffect(() => {
@@ -34,8 +36,25 @@ export default function AllPosts() {
     <div className='main-container'>
      <FeaturedBlog />
       <div className="blog-lib">
-        <h2>Blog Posts</h2>
-        <h3>Welcome to my blog posts page!</h3>
+      <span id="section-tag">Past Posts</span>
+        <div className="blog-post">
+          <div className="blog-image">
+      
+          </div>
+          <div className="blog-info">
+          <span id="post-date">July 12, 2022</span>
+            <h2>Places Less Traveled Are The Most Memorable</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem debitis eveniet fugit? Tenetur, quaerat doloremque.
+              Lorem ipsum dolor sit amet.
+            </p>
+
+          </div>
+        </div>
+
+
+
         {/* <div>
           {allPostsData &&
             allPostsData.map((post, index) => (
