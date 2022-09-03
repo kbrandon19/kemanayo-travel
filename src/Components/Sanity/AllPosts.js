@@ -55,11 +55,12 @@ export default function AllPosts() {
             </div>
           </div> */}
 
-          <div>
+       
             {allPostsData &&
-              allPostsData.map((post, index) => (
+              allPostsData.map((post, index) => ( 
+                <div className="blog-post">
                 <Link to={"/" + post.slug.current} key={post.slug.current}>
-                  <div className="blog-post">
+                  
                     <div className="blog-image">
                     <img src={urlFor(post.mainImage).url()} alt="post graphic" />
                     </div>
@@ -68,12 +69,14 @@ export default function AllPosts() {
                       <span id="post-date">July 12, 2022</span>
                       <h2>{post.title}</h2>
                     </div>
-                  </div>
-                </Link>
+               </Link> 
+               </div>
               ))}
+
+
+
           </div>
         </div>
-      </div>
     </>
   );
 }
