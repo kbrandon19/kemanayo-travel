@@ -3,17 +3,16 @@ import { Link } from "react-router-dom";
 import sanityClient from "../../client";
 import Navigation from "../Navigation/Navigation";
 import FeaturedBlog from "./FeaturedBlog";
-import imageUrlBuilder from '@sanity/image-url'
+import imageUrlBuilder from "@sanity/image-url";
 
 import "./AllPosts.css";
 
 const builder = imageUrlBuilder(sanityClient);
-function urlFor(source){
-    return builder.image(source);
+function urlFor(source) {
+  return builder.image(source);
 }
 
 export default function AllPosts() {
-  // eslint-disable-next-line no-unused-vars
   const [allPostsData, setAllPosts] = useState(null);
 
   useEffect(() => {
@@ -55,29 +54,26 @@ export default function AllPosts() {
             </div>
           </div> */}
 
-       
-            {allPostsData &&
-              allPostsData.map((post, index) => ( 
-                <div className="blog-post">
+          {allPostsData &&
+            allPostsData.map((post, index) => (
+              <div className="blog-post">
                 <Link to={"/" + post.slug.current} key={post.slug.current}>
-                  
-                    <div className="blog-image">
-                    <img src={urlFor(post.mainImage).url()} alt="post graphic" />
-                    </div>
-                    <div className="blog-info">
-                      <span id="post-author">{post.name}</span>
-                      <span id="post-date">July 12, 2022</span>
-                      <h2>{post.title}</h2>
-                    </div>
-               </Link> 
-               </div>
-              ))}
-
-
-
-          </div>
+                  <div className="blog-image">
+                    <img
+                      src={urlFor(post.mainImage).url()}
+                      alt="post graphic"
+                    />
+                  </div>
+                  <div className="blog-info">
+                    <span id="post-author">{post.name}</span>
+                    <span id="post-date">July 12, 2022</span>
+                    <h2>{post.title}</h2>
+                  </div>
+                </Link>
+              </div>
+            ))}
         </div>
+      </div>
     </>
   );
 }
-

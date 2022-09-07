@@ -1,13 +1,49 @@
-import React from "react";
+import sanityClient from "../../client";
+import React, { useEffect, useState } from "react";
+import { useParams } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import imageUrlBuilder from "@sanity/image-url";
 import "./FeaturedBlog.css";
+
+const builder = imageUrlBuilder(sanityClient);
+function urlFor(source) {
+  return builder.image(source);
+}
 export default function FeaturedBlog() {
+  const [allPostsData, setAllPosts] = useState(null);
+  const { slug } = useParams();
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "post"] | order(_createdAt asc)[0]{
+    _id,
+    slug,
+    title,
+    name,
+    body,
+    _createdAt,
+    mainImage{
+            asset -> {
+            _id,
+            url
+          }
+        }
+    "name": author -> name,
+    "authorImage":author -> image
+  }`
+      )
+      .then((data) => setAllPosts(data[0]))
+      .catch(console.error);
+  }, [slug]);
+
+  if(!allPostsData) return <div>Loading...</div>;
   return (
     <>
       <div className="blog-container">
         <div className="blog-feat">
           <div className="blog-feat-image"></div>
           <div className="blog-feat-info">
-            <h1>Places Less Traveled Are The Most Memorable</h1>
+            <h1>{allPostsData.title}</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatem debitis eveniet fugit? Tenetur, quaerat doloremque.
@@ -20,7 +56,7 @@ export default function FeaturedBlog() {
             <div className="post-author">
               <div className="post-name">
                 {/* <div className="profile-avi"></div> */}
-                <p>Jason Fletcher</p>
+                <p>{allPostsData.name}</p>
               </div>
               <span id="auth-date">29, April 2014</span>
             </div>
