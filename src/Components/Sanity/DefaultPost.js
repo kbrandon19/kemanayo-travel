@@ -22,6 +22,7 @@ export default function DefaultPost() {
           `*[slug.current == $slug ]{
           title,
           slug,
+          publishedAt,
           mainImage{
             asset -> {
             _id,
@@ -44,14 +45,13 @@ export default function DefaultPost() {
     <>
     <Navigation/>
     <div className="main-container">
-    <div className="post">
+    <div className="post-container">
       <div className="post-info">
         <h1>{postData.title}</h1>
         <div className="post-author">
-        <div className="author-img">
-            <img src={urlFor(postData.authorImage).width(200).url()} alt="blog post author" />
-        </div>
-       <span>{postData.name}</span>
+
+       <span >{postData.name}</span>
+       <span id="auth-date">{postData.publishedAt}</span>
 
         </div>
       </div>

@@ -12,11 +12,36 @@
 }
 
 
+.post-container{
+    width:100%;
+    height:auto;
+}
+
+.post-info{
+    width:100%;
+    height:auto;
+}
+
+.post-info h1{
+    font-size: 4.6875rem;
+}
+
+.post-author{
+    width:auto;
+    max-width:230px;
+    height:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
 
 
-
-
-
+.post-author span#auth-date{
+    font-style: italic;
+    color:gray;
+    font-size: 14px;
+}
 
 /*  BLOG   */
 
@@ -85,22 +110,9 @@
     color:#787575;
 }
 
-.post-author{
-    width:auto;
-    max-width:350px;
-    margin-top:1rem;
-    height:auto;
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-    
-}
 
-.post-author span#auth-date{
-    font-style: italic;
-    color:gray;
-    font-size: 12px;
-}
+
+
 
 .post-name{
     display:flex;
