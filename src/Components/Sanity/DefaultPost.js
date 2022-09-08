@@ -5,7 +5,7 @@ import imageUrlBuilder from '@sanity/image-url'
 import {PortableText} from '@portabletext/react'
 import Navigation from '../Navigation/Navigation'
 
-import "../../Routes/routes.css"
+import "./DefaultPost.css"
 
 
 const builder = imageUrlBuilder(sanityClient);
@@ -43,8 +43,30 @@ export default function DefaultPost() {
   return (
     <>
     <Navigation/>
-    <div>
-    <div>
+    <div className="main-container">
+    <div className="post">
+      <div className="post-info">
+        <h1>{postData.title}</h1>
+        <div className="post-author">
+        <div className="author-img">
+            <img src={urlFor(postData.authorImage).width(200).url()} alt="blog post author" />
+        </div>
+       <span>{postData.name}</span>
+
+        </div>
+      </div>
+
+      <div className="post-content">
+      {  
+            <PortableText 
+            value={postData.body} 
+            projectId="f30bvj7t"
+            dataset="production" 
+            />
+        }
+      </div>
+    </div>
+    {/* <div>
         <h2>{postData.title}</h2>
         <div>
             <img src={urlFor(postData.authorImage).width(200).url()} alt="blog post author" />
@@ -62,7 +84,7 @@ export default function DefaultPost() {
             dataset="production" 
             />
         }
-        </div>
+        </div> */}
     </div>  
     </>
   )
