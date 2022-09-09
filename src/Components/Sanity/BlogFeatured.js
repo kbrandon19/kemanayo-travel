@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import imageUrlBuilder from "@sanity/image-url";
-import "./FeaturedBlog.css";
+import "./BlogFeatured.css";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -39,7 +39,7 @@ export default function FeaturedBlog() {
   if(!allPostsData) return <div>Loading...</div>;
   return (
     <>
-      <div className="blog-container">
+      <div className="blog-feat-container">
         <div className="blog-feat">
           <div className="blog-feat-image"></div>
           <div className="blog-feat-info">
@@ -53,13 +53,13 @@ export default function FeaturedBlog() {
               Read More
             </a>
 
-            <div className="post-author">
-              <div className="post-name">
-                {/* <div className="profile-avi"></div> */}
+            {/* <div className="blog-feat-author">
+              <div className="blog-feat-name">
+                <div className="blog-feat-avi"></div>
                 <p>{allPostsData.name}</p>
               </div>
               <span id="auth-date">29, April 2014</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

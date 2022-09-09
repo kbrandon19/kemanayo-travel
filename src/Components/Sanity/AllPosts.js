@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../../client";
 import Navigation from "../Navigation/Navigation";
-import FeaturedBlog from "./FeaturedBlog";
+import FeaturedBlog from "./BlogFeatured";
 import imageUrlBuilder from "@sanity/image-url";
 
 import "./AllPosts.css";

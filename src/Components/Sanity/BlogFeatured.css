@@ -1,4 +1,4 @@
-.blog-container {
+.blog-feat-container {
   width: auto;
   height: auto;
 }
@@ -54,7 +54,7 @@
   color: #787575;
 }
 
-.post-author {
+.blog-feat-author {
   width: auto;
   max-width: 350px;
   margin-top: 1rem;
@@ -64,23 +64,20 @@
   align-items: center;
 }
 
-.post-author span#auth-date {
+.blog-feat-author span#auth-date {
   font-style: italic;
   color: gray;
   font-size: 12px;
 }
 
-.post-name {
+.blog-feat-name {
   display: flex;
   align-items: center;
-  margin-right: 1rem;
-}
-
-.post-name {
+  margin-right: 1rem; 
   font-weight: 600;
 }
 
-.profile-avi {
+.blog-feat-avi {
   height: 30px;
   width: 30px;
   margin-right: 1rem;

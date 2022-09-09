@@ -11,8 +11,8 @@
  
 }
 
-/*  BLOG   */
 
+/*
 .blog-container{
     width:100%;
     height:auto;
@@ -27,7 +27,7 @@
     
 }
 
-.blog-feat{
+ .blog-feat{
     position:relative;
     width:auto;
     height:400px;
@@ -137,4 +137,4 @@
         width:80%;
         bottom:-7rem;
     }
-}
+} */
