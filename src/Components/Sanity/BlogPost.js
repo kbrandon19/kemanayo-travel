@@ -40,7 +40,7 @@ export default function DefaultPost() {
       .catch(console.error);
   }, [slug]);
 
-  if (!postData) return <div>Loading...</div>;
+  if (!postData) return <div className="loading">Loading...</div>;
 
   return (
     <>
