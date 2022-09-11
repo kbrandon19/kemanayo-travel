@@ -1,14 +1,14 @@
 import sanityClient from "../../client";
 import React, { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
-import { Link } from "react-router-dom";
-import imageUrlBuilder from "@sanity/image-url";
+// import { Link } from "react-router-dom";
+// import imageUrlBuilder from "@sanity/image-url";
 import "./BlogFeatured.css";
 
-const builder = imageUrlBuilder(sanityClient);
-function urlFor(source) {
-  return builder.image(source);
-}
+// const builder = imageUrlBuilder(sanityClient);
+// function urlFor(source) {
+//   return builder.image(source);
+// }
 export default function FeaturedBlog() {
   const [allPostsData, setAllPosts] = useState(null);
   const { slug } = useParams();

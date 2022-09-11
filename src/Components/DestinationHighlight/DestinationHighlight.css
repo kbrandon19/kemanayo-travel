@@ -1,0 +1,26 @@
+
+/* Trips */
+.trip-hero{
+    position:absolute;
+    z-index:-10;
+    width:100%;
+    height:100vh;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(../../assets/evan-krause-BU6lABNbTpA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .trip-hero:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0,0,0,.1);
+  }
+  

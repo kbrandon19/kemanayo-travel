@@ -1,7 +1,10 @@
+/*  This stylesheet contains all the styling for the Routes (pages) */
+
 .main-container {
   width: 100%;
-  height: 50vh;
+  height:auto;
   max-width: 1280px;
   margin: 2rem auto 2rem auto;
   text-align: center;
+ 
 }

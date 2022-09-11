@@ -86,7 +86,7 @@
 @media (min-width:1280px){
 .blog-post-container{
   width:85%;
-  margin:0 auto;
+  margin:10rem auto 0 auto;
 }
 
 .blog-post-info h1 {
