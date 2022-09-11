@@ -1,6 +1,6 @@
 .main-container {
   width: 100%;
-  height: 50vh;
+  height: 100%;
   max-width: 1280px;
   margin: 2rem auto 2rem auto;
   text-align: left;
@@ -81,4 +81,23 @@
   width: 100%;
   height: 30rem;
   object-fit: cover;
+}
+
+@media (min-width:1280px){
+.blog-post-container{
+  width:85%;
+  margin:0 auto;
+}
+
+.blog-post-info h1 {
+  font-size: 3.6875rem; 
+}
+
+
+}
+@media (min-width:1440px){
+  .main-container {
+    width: 100%;
+  
+  }
 }
