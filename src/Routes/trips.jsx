@@ -1,5 +1,6 @@
 // import React, { Link } from 'react'
-import DestinationHightlight from '../Components/DestinationHighlight/DestinationHightlight'
+import DestinationHightlight from '../Components/Destination/DestinationHightlight'
+import DestinationTrip from '../Components/Destination/DestinationTrip'
 import Navigation from '../Components/Navigation/Navigation'
 import "../Routes/routes.css"
 
@@ -8,7 +9,7 @@ function trips() {
     <>
       <DestinationHightlight />
       <Navigation />
-
+      <DestinationTrip/>
 
     </>
 
