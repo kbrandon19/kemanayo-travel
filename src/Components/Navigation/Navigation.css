@@ -73,6 +73,7 @@ button{
 }
 
 button > p{
+ 
     font-size:12px;
     letter-spacing:1px; 
     font-family: 'Comfortaa', sans-serif;
@@ -121,10 +122,10 @@ button > p{
     }
     .desktop-links ul li{
         margin:0 20px;
-        font-size: 13px;
+        font-size: 16px;
         font-family:'Comfortaa', sans-serif;
         font-weight: 700;
-        color:#000000;
+        color:var(--white);
     }
 
     .desktop-links ul li a:hover{

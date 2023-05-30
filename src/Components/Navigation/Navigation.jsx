@@ -72,16 +72,17 @@ function Navigation() {
         </div>
       </div>
 
+   
       <div className="desktopNav">
 
         <div className="logo"><Link to="/">kemanayo</Link></div>
 
         <div className="desktop-links">
       <ul>
-        <li><Link to="/trips">trips</Link></li>
-        <li><Link to="/rentals">rentals</Link></li>
-        <li><Link to="/events">events</Link></li>
-        <li><Link to="/blog">blog</Link></li>
+        <li><Link to="/trips">Trips</Link></li>
+        <li><Link to="/rentals">Rentals</Link></li>
+        <li><Link to="/events">Events</Link></li>
+        <li><Link to="/blog">Blog</Link></li>
    
       </ul>
         </div>
