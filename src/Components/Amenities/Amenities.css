@@ -60,7 +60,7 @@
   .amenities {
     width: 85%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 1.25rem 2rem;
   }
@@ -77,16 +77,16 @@
     margin: 0;
   }
   .amen-list * p {
-    font-size: 1rem;
+    font-size: .9rem;
     line-height: 1.2;
-    width: 200px;
+    width: 150px;
   }
   .amen-list__label {
-    /* width:100px; */
     align-items: flex-start;
     justify-content: center;
     text-align: left;
   }
+
 }
 
 /* Desktop */
